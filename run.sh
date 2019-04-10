@@ -1,0 +1,1 @@
+python server.py --word_index=devise_cache/DICT_word_index.VAL.pkl --cache=devise_cache/cache.h5 --model=devise_cache/.epoch_249.hdf5 --threaded=0 --host=127.0.0.1 --port=8000 --dummy=0 --captions_train=devise_cache/annotations/captions_train2014.json --captions_valid=devise_cache/annotations/captions_val2014.json --vgg16=devise_cache/vgg16_weights_th_dim_ordering_th_kernels.h5

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Semantic Image Search</title>
+
+    <script src="/static/jquery-1.12.4.js"></script>
+    <script src="/static/jquery-ui.js"></script>
+
+    <style type="text/css">
+        
+        #gallery_placeholder {
+            width:100%;
+            height: auto;
+            float:left;
+        }
+
+        .gallery {
+            width: 224px;
+            float: left;
+            height: 225px;
+            padding: 10px;
+            font-size: 11px;
+            border: 1px solid #ccc; 
+        }
+
+        #errors {
+            font-size: 15px;
+            color: red
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .sample_queries {
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        #byline {
+            font-size: 15px;
+        }
+
+        img {
+            position: absolute;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/smoothness/jquery-ui.css">
+
+</head>
+
+<body>
+      
+    <!-- Search query -->
+
+    <h2>Semantic Image Search Engine</h2>
+
+    <div id="Search_Query">
+        <input type="text" name="query" id="myquery">
+        <button type="button" id="search_button">Search</button> 
+        <div id="errors"></div>        
+    </div>
+
+
+    <br>
+
+    <!-- Search Results -->
+    <div id="gallery_placeholder"></div>
+
+    <script src="/static/myscript.js"></script>
+
+      
+</body>
+</html>
